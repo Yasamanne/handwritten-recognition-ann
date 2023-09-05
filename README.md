@@ -49,3 +49,10 @@ parameters. As a result of all of this, Adam is suggested as the default optimiz
 16. For using different initializers 3 types of initializers were selected and it didn’t change the accuracy all of the models have an accuracy above 99percent the seed was kept the same for all of the initializer generators
 
 17. kernel_initializer_1 = keras.initializers.RandomNormal(mean=0., stddev=1., seed=seed)
+
+18. kernel_initializer_2 = keras.initializers.TruncatedNormal(mean=0.0, stddev=0.05,
+seed=seed)
+
+
+19. kernel_initializer_3 = keras.initializers.RandomUniform(minval=-0.05, maxval=0.05,
+seed=seed)
